@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="about">
+        <h2>ABOUT :</h2>
+        <p>
+        This project was developed by Türkan LAÇİN.<br>
+        Contact: turkanlacin24@gmail.com<br>
+        
+          <strong>LinkedIn:</strong>
+          <a href="www.linkedin.com/in/türkan-laçin" target="_blank">linkedin.com/in/türkan-laçin/</a>
+          <br>
+          <strong>GitHub:</strong>
+          <a href="https://github.com/turkanlacin" target="_blank">github.com/turkanlacin</a>
+        
+        </p>
+      </div>  
+    
+    <div id="login-container">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+    </div>
+
+    <div id="todo-container" style="display: none;">
+        <h2>To-Do List</h2>
+        <input type="text" id="todo-title" placeholder="To-Do Title">
+        <input type="text" id="todo-description" placeholder="To-Do Description">
+        <button onclick="addTodo()">Add To-Do</button>
+
+        <ul id="todo-list"></ul>
+
+        <button onclick="getTodos()">Refresh List</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
